@@ -1002,6 +1002,7 @@ section,
 
 .about .content p:last-child {
   margin-bottom: 0;
+  /* text-justify: auto; */
 }
 
 .about .content .read-more {
