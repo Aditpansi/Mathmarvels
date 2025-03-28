@@ -1000,13 +1000,17 @@ section,
   color: #2ecc71; /* Example: Green */
 }
 
+.highlight3 {
+  color: #f1c40f; /* Example: Yellow */
+}
+
 /* Typing effect */
 @keyframes typing {
   from {
     width: 0;
   }
   to {
-    width: 84%;
+    width: 20%;
   }
 }
 
