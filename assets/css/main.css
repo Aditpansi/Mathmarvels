@@ -1754,6 +1754,14 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
+.custom-dropdown {
+  color: gray; /* Makes dropdown text gray */
+}
+
+.custom-dropdown option {
+  color: black; /* Ensures options are visible when selected */
+}
+
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
