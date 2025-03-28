@@ -1020,6 +1020,15 @@ section,
     border-color: transparent;
   }
 }
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }  /* Visible */
+  50% { opacity: 0; }       /* Hidden */
+}
+
+.blinking-text {
+  animation: blink 1s infinite;  /* Blinks every second */
+}
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
