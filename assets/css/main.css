@@ -839,6 +839,8 @@ section,
   margin: 5px 0 30px 0;
   font-size: 22px;
   font-weight: 400;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .hero .btn-get-started {
@@ -1002,7 +1004,11 @@ section,
 
 .about .content p:last-child {
   margin-bottom: 0;
-  /* text-justify: auto; */
+}
+
+.about .content p {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .about .content .read-more {
@@ -1067,6 +1073,8 @@ section,
 
 .about .icon-box p {
   margin-bottom: 0;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .about .icon-box:hover i {
