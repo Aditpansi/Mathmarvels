@@ -980,6 +980,42 @@ section,
   }
 }
 
+.typewriter-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #5578ff; /* Cursor effect */
+  font-size: 18px;
+  font-weight: bold;
+  width: 0; /* Initially hidden */
+  animation: typing 4s steps(40, end) forwards, blinkCursor 0.7s infinite;
+}
+
+/* Different colors for specific parts */
+.highlight1 {
+  color: #ff5733; /* Example: Red-Orange */
+}
+
+.highlight2 {
+  color: #2ecc71; /* Example: Green */
+}
+
+/* Typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 84%;
+  }
+}
+
+/* Blinking cursor effect */
+@keyframes blinkCursor {
+  50% {
+    border-color: transparent;
+  }
+}
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
