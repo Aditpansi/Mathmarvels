@@ -984,11 +984,11 @@ section,
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 2px solid #5578ff; /* Cursor effect */
+  border-right: 2px solid transparent; /* Cursor effect */
   font-size: 18px;
   font-weight: bold;
-  width: 0; /* Initially hidden */
-  animation: typing 4s steps(40, end) forwards, blinkCursor 0.7s infinite;
+  width: 0; /* Start hidden */
+  animation: typing 4s steps(30, end) forwards, blinkCursor 0.7s infinite;
 }
 
 /* Different colors for specific parts */
@@ -1005,14 +1005,21 @@ section,
 }
 
 /* Typing effect */
+/* Dynamic Typewriter Animation */
 @keyframes typing {
   from {
     width: 0;
   }
   to {
-    width: 30%;
+    width: 22ch; /* Adjust dynamically based on text length */
   }
 }
+
+/* @media (max-width: 768px) {
+  .typewriter-text {
+    font-size: 16px;
+  }
+} */
 
 /* Blinking cursor effect */
 @keyframes blinkCursor {
