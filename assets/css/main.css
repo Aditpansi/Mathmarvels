@@ -1003,7 +1003,9 @@ section,
 .highlight3 {
   color: #f1c40f; /* Example: Yellow */
 }
-
+.highlight4 {
+  color: #3498db; /* Example: Blue */
+}
 /* Typing effect */
 /* Dynamic Typewriter Animation */
 @keyframes typing {
